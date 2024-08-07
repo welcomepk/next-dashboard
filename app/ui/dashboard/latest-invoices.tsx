@@ -8,7 +8,7 @@ import { fetchLatestInvoices } from '@/app/lib/data';
 export default async function LatestInvoices() {
 
   const latestInvoices = await fetchLatestInvoices()
-  await new Promise(res => setTimeout(res, 5000))
+
   return (
     <div className="flex w-full flex-col md:col-span-4">
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
